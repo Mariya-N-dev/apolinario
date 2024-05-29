@@ -1,0 +1,246 @@
+.modal {
+    background-color: #ef17cf6a;
+    font-size: 2rem;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+
+    /* ... */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+
+    img {
+        max-height: 80vh;
+    }
+}
+
+
+img.folder-thumbnail {
+    display: inline;
+    width: 40px;
+    height: auto;
+}
+
+.open-button {
+    background-color: aquamarine;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10001;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    background-color: #0cff45;
+    z-index: 100;
+
+
+}
+
+///container
+.container {
+    display: none;
+    height: 90vh;
+    width: 90vw;
+
+
+
+    h1 {
+        position: absolute;
+    }
+
+
+    ul {
+        background-color: #ffbe0c8a;
+
+        li {
+            padding: 20px;
+            background-color: #ffb75880;
+            border: 3px solid blue;
+            margin: 20px 0 20px 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .column {
+        position: relative;
+        top: 30px;
+
+        &-1 {
+            width: 20%;
+        }
+
+        &-2,
+        &-3 {
+            width: 40%;
+        }
+    }
+
+    [data-id] {
+        display: none;
+
+        &.active {
+            display: block;
+            z-index: 100;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+
+        .column {
+
+            width: 100%;
+
+
+
+        }
+    }
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10001;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+// ///3 columns
+// dialog {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .container {
+//     display: flex;
+//     column-count: 3;
+//     height: 100%;
+// }
+
+// .column {
+//     padding: 10px;
+//     float: right;
+// }
+
+// .fixed-width {
+//     width: 200px;
+//     background-color: #f9ca24;
+// }
+
+// .flexible {
+//     flex: 1;
+//     background-color: #00b894;
+// }
+
+// .min-width {
+//     min-width: 300px;
+//     background-color: #0984e3;
+// }

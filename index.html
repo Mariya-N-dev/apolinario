@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique Apolinário</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+</head>
+
+<body>
+    <!-- <navigation-menu></navigation-menu> -->
+    <!-- your content here -->
+    <a href="#" class="random draggable">
+        <div>
+            <img src="resources/images/zancudo_400px.png" alt="">
+        </div>
+    </a>
+    <a href="#" class="random draggable  rotating-image">
+        <div>
+            <img src="resources/images/fusao_capa-digital-FINAL.png" alt="">
+        </div>
+    </a>
+    <a href="#" class="random draggable">
+        <div id="draggable-div">
+            <!-- The 3D model will be rendered here -->
+            <model-viewer src="resources/images/mail__3d_asset_0_gl.glb" alt="A 3D model" auto-rotate
+                camera-controls></model-viewer>
+        </div>
+    </a>
+    <a href="#" class="random draggable open-button">
+        <div>
+            <img src="resources/images/Seagull riding on another seagull_Sub_01_4.gif" alt="">
+        </div>
+    </a>
+    <dialog class="modal container">
+        <button class="close-button">X</button>
+        <h1>Collaborations</h1>
+        <div class="column column-1">
+            <ul>
+                <li data-target="1"> Cavalo na Caixa
+                    <img src="resources/images/olho.png" class="folder-thumbnail">
+                </li>
+                <li data-target="2">79 REASONS WJY I NEED MORE PICKS</li>
+                <li data-target="3">Translocações da Memória</li>
+            </ul>
+        </div>
+        <div class="column column-2">
+            <div data-id="1">
+
+                <p>Cavalo Na Caixa was one of the first major productions directed by Apolinário and Mariya
+                    Nesvyetaylo.
+                    It was a co-production with Teatro do Frio, long time partners of Apolinário. It was
+                    comprised o
+                    of a Performative show, and later an self-edited album.
+                    <br>
+                    Apolinário was one of the core members of the project, participating in a very wide creative
+                    process from production, concept creation
+                    performance, music writing and cenography.
+                </p>
+                <a
+                    href="link: https://www.teatrodofrio.com/project_detail.cfm?year=2017&pID=63&ptitle=Cavalo_na%20Caixa">LINK</a>
+            </div>
+            <div data-id="2">
+                <p>
+                    69 Reasons Why I Need More Dic Pics is what happens when Apolinário H
+                    and Mariya Nesvyetaylo try to make a performance that fits into the "Performance" type genre of
+                    performances
+                    it is a visceral ritual of rythmic dance and youtube Y-hole that keeps on giving all the way.
+
+                    It was presented three times between 2017 and 2018.
+
+                </p>
+            </div>
+            <div data-id="3">
+                <p>Translocações da Memória was a collaboration between F and H Apolinário
+                    , it culminated in a solo photography exhibition for which Apolinário H
+                    did the soundesign.
+                </p>
+            </div>
+        </div>
+        <div class="column column-3">
+            <!-- Slideshow container -->
+            <div id="slideshow-container-1" data-id="1"></div>
+            <div id="slideshow-container-2" data-id="2"></div>
+
+            <div data-id="3">
+                <!-- <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1731984204&color=%231f3dff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div
+                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/zancudoberraco" title="Zancudo Berraco" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">Zancudo Berraco</a> · <a
+                        href="https://soundcloud.com/zancudoberraco/translocacoes-da-memoria-sound-design-for-exhibition"
+                        title="TRANSLOCAÇÕES DA MEMÓRIA - Sound design for Exhibition" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">TRANSLOCAÇÕES DA MEMÓRIA - Sound design for
+                        Exhibition</a>
+                </div> -->
+            </div>
+        </div>
+    </dialog>
+
+    <a href="#" class="random draggable">
+        <div id="draggable-div">
+            <!-- The 3D model will be rendered here -->
+            <model-viewer src="resources/images/_muscles_of_a_human_.glb" alt="A 3D model" auto-rotate
+                camera-controls></model-viewer>
+        </div>
+    </a>
+    <a href="#" class="random draggable">
+        <div id="draggable-div">
+            <!-- The 3D model will be rendered here -->
+            <model-viewer src="resources/images/3D-violin.glb" alt="A 3D model" auto-rotate
+                camera-controls></model-viewer>
+        </div>
+    </a>
+    <template id="slideshow-template">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="" data-src="" alt="Image 1">
+                <div class="text"></div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </template>
+
+    <!-- <script src="navigation-menu.js"></script> -->
+    <!-- <script type="module" src="3d.js"></script> -->
+    <script src="draggable.js"></script>
+    <script src="observer.js"></script>
+    <script src="windows.js"></script>
+    <script src="slideshow-module.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+
+</html>

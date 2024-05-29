@@ -1,0 +1,58 @@
+{
+    "collections": [
+        {
+            "id": "1",
+            "title": "Cavalo na Caixa",
+            "slides": [
+                {
+                    "numberText": "1 / 4",
+                    "imageSrc": "resources/images/CnC/CC1.png",
+                    "captionText": "Caption Text 1",
+                    "imageClass": "lazy",
+                    "dataSrc": "resources/images/CnC/CC1.png"
+                },
+                {
+                    "numberText": "2 / 4",
+                    "imageSrc": "resources/images/CnC/CC2.png",
+                    "captionText": "Caption Text 2",
+                    "imageClass": "lazy",
+                    "dataSrc": "resources/images/CnC/CC2.png"
+                },
+                {
+                    "numberText": "3 / 4",
+                    "imageSrc": "resources/images/CnC/CC3.png",
+                    "captionText": "Caption Text 3",
+                    "imageClass": "lazy",
+                    "dataSrc": "resources/images/CnC/CC3.png"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Cavalo na Caixa 2",
+            "slides": [
+                {
+                    "numberText": "1 / 4",
+                    "imageSrc": "resources/images/CnC/CC1.png",
+                    "captionText": "Caption Text 1",
+                    "imageClass": "lazy",
+                    "dataSrc": "resources/images/CnC/CC1.png"
+                },
+                {
+                    "numberText": "2 / 4",
+                    "imageSrc": "resources/images/CnC/CC2.png",
+                    "captionText": "Caption Text 2",
+                    "imageClass": "lazy",
+                    "dataSrc": "resources/images/CnC/CC2.png"
+                },
+                {
+                    "numberText": "3 / 4",
+                    "imageSrc": "resources/images/CnC/CC3.png",
+                    "captionText": "Caption Text 3",
+                    "imageClass": "lazy",
+                    "dataSrc": "resources/images/CnC/CC3.png"
+                }
+            ]
+        }
+    ]
+}
