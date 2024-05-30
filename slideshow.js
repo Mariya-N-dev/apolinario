@@ -11,45 +11,38 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-// function showSlides(n) {
-//     let i;
-//     let slides = document.getElementsByClassName("mySlides");
-//     let dots = document.getElementsByClassName("dot");
-//     if (n > slides.length) { slideIndex = 1 }
-//     if (n < 1) { slideIndex = slides.length }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex - 1].style.display = "block";
-//     dots[slideIndex - 1].className += " active";
-// } 
-
-
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (slides.length === 0) {
-        // Handle the case where the slides array is empty
-        console.error("No slides found");
-        return;
+    
+    // Ensure slideIndex wraps around
+    if (n > slides.length) {
+        slideIndex = 1;
     }
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    console.log("Total slides:", slides.length);
+    console.log("Total dots:", dots.length);
+    console.log("Current slide index:", slideIndex);
+    
+    // Hide all slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    
+    // Remove "active" class from all dots
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    if (slides[slideIndex - 1]) {
+    
+    // Display the current slide and add "active" class to the corresponding dot
+    if (slides[slideIndex - 1] && dots[slideIndex - 1]) {
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     } else {
-        // Handle the case where the slideIndex is out of bounds
-        console.error("Slide index out of bounds");
+        console.error("Slide index out of bounds or no dots found");
     }
 }
